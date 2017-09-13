@@ -1,0 +1,15 @@
+{
+	"name": "theme-desert256",
+	"version": "1.0.0",
+	"publisher": "vscode",
+	"engines": { "vscode": "*" },
+	"contributes": {
+		"themes": [
+			{
+				"label": "Desert 256",
+				"uiTheme": "vs-dark",
+				"path": "./themes/desert256-theme.json"
+			}
+		]
+	}
+}
