@@ -1,15 +1,22 @@
 {
-	"name": "theme-desert256",
-	"version": "1.0.0",
-	"publisher": "vscode",
-	"engines": { "vscode": "*" },
-	"contributes": {
-		"themes": [
-			{
-				"label": "Desert 256",
-				"uiTheme": "vs-dark",
-				"path": "./themes/desert256-theme.json"
-			}
-		]
-	}
+    "name": "vscode-desert256",
+    "displayName": "franklx|Desert256 Color Theme",
+    "description": "franklx desert256 color theme for VS Code.",
+    "version": "0.0.0-git",
+    "publisher": "franklx",
+    "engines": { "vscode": "*" },
+    "contributes": {
+        "themes": [
+            {
+                "label": "Desert 256",
+                "uiTheme": "vs-dark",
+                "path": "./themes/desert256-theme.json"
+            }
+        ]
+    },
+    "homepage": "https://github.com/franklx/vscode-desert256",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/franklx/vscode-desert256.git"
+    }
 }

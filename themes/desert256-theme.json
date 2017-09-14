@@ -47,11 +47,9 @@
         { "name": "String",
             "scope": "string",
             "settings": { "foreground": "#ff8700" } },
-        /*
         { "name": "String Embedded Source",
             "scope": "string source",
-            "settings": { "foreground": "#" } },
-        */
+            "settings": { "foreground": "#ffd787" } },
         { "name": "Number",
             "scope": "constant.numeric",
             "settings": { "foreground": "#ff8787" } },
@@ -174,6 +172,11 @@
         { "name": "Meta Brace",
             "scope": "punctuation.section.embedded -(source string source punctuation.section.embedded), meta.brace.erb.html",
             "settings": { "foreground": "#f0e770" } },
+
+        { "name": "Format String Placeholder",
+            "scope": "constant.character.format",
+            "settings": { "foreground": "#ffd75f" } },
+
         /*
         { "name": "HTML ID",
             "scope": "meta.toc-list.id",
