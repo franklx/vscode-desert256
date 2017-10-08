@@ -39,8 +39,8 @@
     },
     "tokenColors": [
         { "settings": { "foreground": "#ffffff", "background": "#000000" } },
-		{ "name": "By franklx",
-			"settings": { "foreground": "#c5c8c6ff", "background": "#202025ff" } },
+        { "name": "By franklx",
+            "settings": { "foreground": "#c5c8c6ff", "background": "#202025ff" } },
         { "name": "Comment",
             "scope": "comment",
             "settings": { "foreground": "#87d7ff" } },
@@ -206,7 +206,7 @@
             "settings": { "foreground": "#ffaf87" } },
         { "name": "CSS Property Name",
             "scope": "support.type.property-name.css",
-            "settings": { "foreground": "#ffd787" } }
+            "settings": { "foreground": "#ffd787" } },
         /*
         { "name": "CSS Property Value",
             "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
@@ -254,12 +254,13 @@
         { "name": "diff: header",
             "scope": "meta.diff, meta.diff.header",
             "settings": { "foreground": "#", "background": "#", "fontStyle": "italic" } },
+        */
         { "name": "diff: deleted",
             "scope": "markup.deleted",
-            "settings": { "foreground": "#", "background": "#", } },
+            "settings": { "foreground": "#272727" } },
         { "name": "diff: changed",
             "scope": "markup.changed",
-            "settings": { "foreground": "#", "background": "#", } },
+            "settings": { "foreground": "#", "background": "#" } },
         { "name": "diff: inserted",
             "scope": "markup.inserted",
             "settings": { "foreground": "#", "background": "#" } },
@@ -270,19 +271,29 @@
         { "name": "Markup Lists",
             "scope": "markup.list",
             "settings": { "foreground": "#" } },
-        { "name": "Markup Styling",
-            "scope": "markup.bold, markup.italic",
-            "settings": { "foreground": "#" } },
+
+        { "name": "Markup Bold",
+            "scope": "markup.bold",
+            "settings": { "fontStyle": "bold" } },
+        { "name": "Markup Italic",
+            "scope": "markup.italic",
+            "settings": { "fontStyle": "italic" } },
+        { "name": "Markup Strikethrough",
+            "scope": "markup.strikethrough",
+            "settings": { "foreground": "#272727" } },
+        /*
         { "name": "Markup Inline",
             "scope": "markup.inline.raw",
             "settings": { "foreground": "#" } },
+        */
         { "name": "Markup Headings",
             "scope": "markup.heading",
-            "settings": { "foreground": "#" } },
+            "settings": { "foreground": "#ff5f5f" } },
         { "name": "Markup Setext Header",
             "scope": "markup.heading.setext",
-            "settings": { "foreground": "#" } },
+            "settings": { "foreground": "#ff5f5f" } }
 
+        /*
         { "name": "",
             "scope": "token.info-token",
             "settings": { "foreground": "#" } },
