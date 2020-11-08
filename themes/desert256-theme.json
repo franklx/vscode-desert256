@@ -29,15 +29,21 @@
             "settings": { "foreground": "#ff8787" }
         },
         { "name": "User-defined constant",
-            "scope": ["constant.character", "constant.other"],
+            "scope": [
+                "constant.character",
+                "constant.other",
+            ],
             "settings": { "foreground": "#ff8787" }
         },
         { "name": "Keyword",
             "scope": "keyword",
             "settings": { "foreground": "#f0e770", "fontStyle": "bold" }
         },
-        { "name": "Support",
-            "scope": ["support", "storage.type"],
+        { "name": "Types",
+            "scope": [
+                "support.type",
+                "entity.other.attribute-name",
+            ],
             "settings": { "foreground": "#ff5f5f" }
         },
         { "name": "Storage",
@@ -45,7 +51,10 @@
             "settings": { "foreground": "#f0e770", "fontStyle": "bold" }
         },
         { "name": "Class name",
-            "scope": "entity.name.class, entity.name.type",
+            "scope": [
+                "entity.name.class",
+                "entity.name.type"
+            ],
             "settings": { "foreground": "#ff5f5f" }
         },
         { "name": "Inherited class",
@@ -68,54 +77,32 @@
             "scope": "entity.other.attribute-name",
             "settings": { "foreground": "#d7af87" }
         },
-        /*
+
         { "name": "Library function",
             "scope": "support.function",
-            "settings": { "foreground": "" }
+            "settings": { "foreground": "#5faf5f" }
         },
-        { "name": "Class Variable",
-            "scope": "variable.other, variable.js, punctuation.separator.variable",
-            "settings": { "foreground": "" }
-        },
-        */
+        //{ "name": "Class Variable",
+        //    "scope": [
+        //        "variable.other",
+        //        "variable.js",
+        //        "punctuation.separator.variable"
+        //    ],
+        //    "settings": { "foreground": "#ffd7d7" }
+        //},
         { "name": "Language Constant",
             "scope": "constant.language",
             "settings": { "foreground": "#ff8787" }
         },
-        /*
-        { "name": "Meta Brace",
-            "scope": "punctuation.section.embedded -(source string source punctuation.section.embedded), meta.brace.erb.html",
-            "settings": { "foreground": "" }
-        },
-        */
         { "name": "Invalid",
             "scope": "invalid",
             "settings": { "foreground": "#ff0b00" }
         },
-        /*
-        { "name": "Normal Variable",
-            "scope": "variable.other.php, variable.other.normal",
-            "settings": { "foreground": "" }
-        },
-        { "name": "Function Object",
-            "scope": "meta.function-call.object",
-            "settings": { "foreground": "" }
-        },
-        { "name": "Function Call Variable",
-            "scope": "variable.other.property",
-            "settings": { "foreground": "" }
-        },
-        */
         { "name": "Keyword Control",
             "scope": "keyword.control",
             "settings": { "foreground": "#f0e770", "fontStyle": "bold" }
         },
-        /*
-        { "name": "Import Statement",
-            "scope": "keyword.control.import.python",
-            "settings": { "foreground": "" }
-        },
-        */
+
         { "name": "this.self",
             "scope": "variable.language",
             "settings": { "foreground": "#ffd7d7" }
@@ -130,11 +117,17 @@
             "settings": { "foreground": "#5faf5f" }
         },
         { "name": "Haskell Type Name",
-            "scope": ["support.other.module", "storage.type.haskell"],
+            "scope": [
+                "support.other.module",
+                "storage.type.haskell"
+            ],
             "settings": { "foreground": "#ff5f5f" }
         },
         { "name": "Haskell Unit",
-            "scope": "support.constant.unit.haskell, constant.language.unit.haskell",
+            "scope": [
+                "support.constant.unit.haskell",
+                "constant.language.unit.haskell"
+            ],
             "settings": { "foreground": "#f0e770" }
         },
         { "name": "Haskell Directive",
@@ -142,40 +135,37 @@
             "settings": { "foreground": "#afd7ff" }
         },
 
-        /*
-        { "name": "Tag",
-            "scope": "meta.tag",
-            "settings": { "foreground": "" }
-        },
-        */
         { "name": "Tag Name",
             "scope": "entity.name.tag",
             "settings": { "foreground": "#f0e770" }
         },
         { "name": "Doctype",
-            "scope": "meta.doctype, meta.tag.sgml-declaration.doctype, meta.tag.sgml.doctype",
+            "scope": [
+                "meta.doctype",
+                "meta.tag.sgml-declaration.doctype",
+                "meta.tag.sgml.doctype",
+            ],
             "settings": { "foreground": "#afafff" }
         },
-        /*
-        { "name": "Tag Inline Source",
-            "scope": "meta.tag.inline source, text.html.php.source",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Tag Other",
-            "scope": "meta.tag.other, entity.name.tag.style, entity.name.tag.script, meta.tag.block.script, source.js.embedded punctuation.definition.tag.html, source.css.embedded punctuation.definition.tag.html",
-            "settings": { "foreground": "#" }
-        },
-        */
         { "name": "Tag Attribute",
-            "scope": "entity.other.attribute-name, meta.tag punctuation.definition.string",
+            "scope": [
+                "entity.other.attribute-name",
+                "meta.tag punctuation.definition.string",
+            ],
             "settings": { "foreground": "#ffd75f" }
         },
         { "name": "Tag Value",
-            "scope": "meta.tag string -source -punctuation, text source text meta.tag string -punctuation",
+            "scope": [
+                "meta.tag string -source -punctuation",
+                "text source text meta.tag string -punctuation",
+            ],
             "settings": { "foreground": "#ff8787" }
         },
         { "name": "Meta Brace",
-            "scope": "punctuation.section.embedded -(source string source punctuation.section.embedded), meta.brace.erb.html",
+            "scope": [
+                "punctuation.section.embedded -(source string source punctuation.section.embedded)",
+                "meta.brace.erb.html",
+            ],
             "settings": { "foreground": "#f0e770" }
         },
 
@@ -184,18 +174,20 @@
             "settings": { "foreground": "#ffd75f" }
         },
 
-        /*
-        { "name": "HTML ID",
-            "scope": "meta.toc-list.id",
-            "settings": { "foreground": "#" }
-        },
-        */
         { "name": "HTML String",
-            "scope": "string.quoted.double.html, punctuation.definition.string.begin.html, punctuation.definition.string.end.html",
+            "scope": [
+                "string.quoted.double.html",
+                "punctuation.definition.string.begin.html",
+                "punctuation.definition.string.end.html"
+            ],
             "settings": { "foreground": "#ff8700" }
         },
         { "name": "HTML Tags",
-            "scope": "punctuation.definition.tag.html, punctuation.definition.tag.begin, punctuation.definition.tag.end",
+            "scope": [
+                "punctuation.definition.tag.html",
+                "punctuation.definition.tag.begin",
+                "punctuation.definition.tag.end",
+            ],
             "settings": { "foreground": "#87ff87" }
         },
         { "name": "Unquoted String",
@@ -203,12 +195,11 @@
             "settings": { "foreground": "#ff8787" }
         },
 
-        { "name": "CSS Brackets",
-            "scope": "punctuation.section",
-            "settings": { "foreground": "#87ff87" }
-        },
         { "name": "CSS Selector",
-            "scope": "entity.other.attribute-name.class.css, entity.other.attribute-name.id.css",
+            "scope": [
+                "entity.other.attribute-name.class.css",
+                "entity.other.attribute-name.id.css",
+            ],
             "settings": { "foreground": "#ffffff" }
         },
         { "name": "CSS ID",
@@ -223,107 +214,7 @@
             "scope": "support.type.property-name.css",
             "settings": { "foreground": "#ffd787" }
         },
-        /*
-        { "name": "CSS Property Value",
-            "scope": "meta.property-group support.constant.property-value.css, meta.property-value support.constant.property-value.css",
-            "settings": { "foreground": "" } }
-        { "name": "JavaScript Variable",
-            "scope": "variable.language.js",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Template Definition",
-            "scope": "punctuation.definition.template-expression, punctuation.section.embedded.coffee",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Reset JavaScript string interpolation expression",
-            "scope": "meta.template.expression",
-            "settings": { "foreground": "#" }
-        },
 
-        { "name": "PHP Function Call",
-            "scope": "meta.function-call.object.php",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "PHP Single Quote HMTL Fix",
-            "scope": "punctuation.definition.string.end.php, punctuation.definition.string.begin.php",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "PHP Parenthesis HMTL Fix",
-            "scope": "source.php.embedded.line.html",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "PHP Punctuation Embedded",
-            "scope": "punctuation.section.embedded.begin.php, punctuation.section.embedded.end.php",
-            "settings": { "foreground": "#" }
-        },
-
-        { "name": "Ruby Symbol",
-            "scope": "constant.other.symbol.ruby",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Ruby Variable",
-            "scope": "variable.language.ruby",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Ruby Special Method",
-            "scope": "keyword.other.special-method.ruby",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Ruby Embedded Source",
-            "scope": "source.ruby.embedded.source",
-            "settings": { "foreground": "#" }
-        },
-
-        { "name": "SQL",
-            "scope": "keyword.other.DML.sql",
-            "settings": { "foreground": "#" }
-        },
-
-        { "name": "diff: header",
-            "scope": "meta.diff, meta.diff.header",
-            "settings": { "foreground": "#", "background": "#", "fontStyle": "italic" }
-        },
-        */
-        { "name": "diff: deleted",
-            "scope": "markup.deleted",
-            "settings": { "foreground": "#272727" }
-        },
-        { "name": "diff: changed",
-            "scope": "markup.changed",
-            "settings": { "foreground": "#", "background": "#" }
-        },
-        { "name": "diff: inserted",
-            "scope": "markup.inserted",
-            "settings": { "foreground": "#", "background": "#" }
-        },
-
-        { "name": "Markup Quote",
-            "scope": "markup.quote",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "Markup Lists",
-            "scope": "markup.list",
-            "settings": { "foreground": "#" }
-        },
-
-        { "name": "Markup Bold",
-            "scope": "markup.bold",
-            "settings": { "fontStyle": "bold" }
-        },
-        { "name": "Markup Italic",
-            "scope": "markup.italic",
-            "settings": { "fontStyle": "italic" }
-        },
-        { "name": "Markup Strikethrough",
-            "scope": "markup.strikethrough",
-            "settings": { "foreground": "#272727" }
-        },
-        /*
-        { "name": "Markup Inline",
-            "scope": "markup.inline.raw",
-            "settings": { "foreground": "#" }
-        },
-        */
         { "name": "Markup Headings",
             "scope": "markup.heading",
             "settings": { "foreground": "#ff5f5f" }
@@ -331,24 +222,5 @@
         { "name": "Markup Setext Header",
             "scope": "markup.heading.setext",
             "settings": { "foreground": "#ff5f5f" } }
-
-        /*
-        { "name": "",
-            "scope": "token.info-token",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "",
-            "scope": "token.warn-token",
-            "settings": { "foreground": "#" }
-        },
-        { "name": "",
-            "scope": "token.error-token",
-            "settings": { "foreground": "#" }
-        },
-        {  "name": "",
-            "scope": "token.debug-token",
-            "settings": { "foreground": "#" }
-        },
-    */
     ]
 }
