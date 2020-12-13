@@ -4,7 +4,9 @@
     "description": "desert256 color theme for VS Code.",
     "version": "0.5.2",
     "publisher": "franklx",
-    "engines": { "vscode": "*" },
+    "engines": {
+        "vscode": "*"
+    },
     "contributes": {
         "themes": [
             {
@@ -18,5 +20,6 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/franklx/vscode-desert256.git"
-    }
+    },
+    "license" : "MIT"
 }
