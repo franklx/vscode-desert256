@@ -2,7 +2,7 @@
     "name": "vscode-desert256",
     "displayName": "Desert256 Color Theme (franklx)",
     "description": "desert256 color theme for VS Code.",
-    "version": "0.5.0-git",
+    "version": "0.5.2",
     "publisher": "franklx",
     "engines": { "vscode": "*" },
     "contributes": {

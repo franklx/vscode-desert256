@@ -82,6 +82,10 @@
             "scope": "support.function",
             "settings": { "foreground": "#5faf5f" }
         },
+        { "name": "Function decorator",
+            "scope": "meta.function.decorator",
+            "settings": { "foreground": "#5faf5f" }
+        },
         //{ "name": "Class Variable",
         //    "scope": [
         //        "variable.other",
@@ -222,5 +226,28 @@
         { "name": "Markup Setext Header",
             "scope": "markup.heading.setext",
             "settings": { "foreground": "#ff5f5f" } }
-    ]
+    ],
+    "semanticTokenColors": {
+      //"namespace":               "#      ", // entity.name.namespace
+        "type":                    "#ff5f5f", // entity.name.type
+        "type.defaultLibrary":     "#ff5f5f", // support.type
+      //"struct":                  "#      ", // storage.type.struct
+        "class":                   "#ff5f5f", // entity.name.type.class
+      //"class.defaultLibrary":    "#      ", // support.class
+      //"interface":               "#      ", // entity.name.type.interface
+      //"enum":                    "#      ", // entity.name.type.enum
+        "function":                "#87ff87", // entity.name.function
+        "function.defaultLibrary": "#5faf5f", // support.function
+      //"method":                  "#      ", // entity.name.function.member
+      //"macro":                   "#      ", // entity.name.function.macro
+      //"variable":                "#      ", // variable.other.readwrite , entity.name.variable
+      //"variable.readonly":       "#      ", // variable.other.constant
+      //"variable.readonly.defaultLibrary": "#", // support.constant
+        "variable.typeHint":       "#ff5f5f",
+        "parameter":               "#ffd787", // variable.parameter
+      //"property":                "#      ", // variable.other.property
+      //"property.readonly":       "#      ", // variable.other.constant.property
+      //"enumMember":              "#      ", // variable.other.enummember
+      //"event":                   "#      ", // variable.other.event
+    }
 }
