@@ -86,14 +86,6 @@
             "scope": "meta.function.decorator",
             "settings": { "foreground": "#5faf5f" }
         },
-        //{ "name": "Class Variable",
-        //    "scope": [
-        //        "variable.other",
-        //        "variable.js",
-        //        "punctuation.separator.variable"
-        //    ],
-        //    "settings": { "foreground": "#ffd7d7" }
-        //},
         { "name": "Language Constant",
             "scope": "constant.language",
             "settings": { "foreground": "#ff8787" }
@@ -106,12 +98,10 @@
             "scope": "keyword.control",
             "settings": { "foreground": "#f0e770", "fontStyle": "bold" }
         },
-
-        { "name": "this.self",
-            "scope": "variable.language",
+        { "name": "Variable",
+            "scope": "variable",
             "settings": { "foreground": "#ffd7d7" }
         },
-
         { "name": "C/CPP/Haskell Preprocessor",
             "scope": "meta.preprocessor",
             "settings": { "foreground": "#afafff" }
@@ -138,7 +128,6 @@
             "scope": "keyword.other.preprocessor.haskell",
             "settings": { "foreground": "#afd7ff" }
         },
-
         { "name": "Tag Name",
             "scope": "entity.name.tag",
             "settings": { "foreground": "#f0e770" }
@@ -198,7 +187,6 @@
             "scope": "string.unquoted",
             "settings": { "foreground": "#ff8787" }
         },
-
         { "name": "CSS Selector",
             "scope": [
                 "entity.other.attribute-name.class.css",
